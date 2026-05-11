@@ -14,7 +14,7 @@ library(patchwork)
 ## ---- Data prep ----
 
 dat <- read.csv(
-  "~/Dropbox/Data/kristi_ovaries/reproductive_data_int.csv",
+  "~/PATH/reproductive_data_int.csv",
   stringsAsFactors = TRUE
 )
 
@@ -206,7 +206,7 @@ combined <- p_status + p_score + p_length +
   plot_annotation(tag_levels = "A")
 
 ggsave(
-  "~/Dropbox/Data/kristi_ovaries/ovary_three_panel.pdf",
+  "~/PATH/ovary_three_panel.pdf",
   combined,
   width  = 10,
   height = 4
