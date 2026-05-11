@@ -7,7 +7,7 @@ library(emmeans)
 
 
 
-setwd("/Users/emb3/Dropbox/Projects/kristi_behaviour")
+setwd("/PATH/kristi_behaviour")
 comp_data <- read.csv(file = "complied_aggression.csv")
 
 comp_data$Treatment   <- factor(comp_data$Treatment)
