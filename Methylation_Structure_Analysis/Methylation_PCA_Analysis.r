@@ -25,31 +25,31 @@ k_extract <- 5   # how many robust PCs to carry into dat
 
 # ------------------- INPUT ----------------------
 #C <- read.table(
-#  "/Users/emb3/Library/CloudStorage/OneDrive-UniversityofLeicester/projects/Eamonn_Bumblebee/methylated_counts_matrix.tsv",
+#  "/PATH/methylated_counts_matrix.tsv",
 #  header = TRUE, row.names = 1, sep = "\t", check.names = FALSE
 #)# home
 
 C <- read.table(
-  "/Users/ebm3/Library/CloudStorage/OneDrive-UniversityofLeicester/projects/Eamonn_Bumblebee/methylated_counts_matrix.tsv",
+  "/PATH/methylated_counts_matrix.tsv",
   header = TRUE, row.names = 1, sep = "\t", check.names = FALSE
 )# work
 
 #N <- read.table(
-#  "/Users/emb3/Library/CloudStorage/OneDrive-UniversityofLeicester/projects/Eamonn_Bumblebee/coverage_counts_matrix.tsv",
+#  "/PATH/coverage_counts_matrix.tsv",
 #  header = TRUE, row.names = 1, sep = "\t", check.names = FALSE
 #)
 
 N <- read.table(
-  "/Users/ebm3/Library/CloudStorage/OneDrive-UniversityofLeicester/projects/Eamonn_Bumblebee/coverage_counts_matrix.tsv",
+  "/PATH/coverage_counts_matrix.tsv",
   header = TRUE, row.names = 1, sep = "\t", check.names = FALSE
 )#work
 
 #covar <- fread(
-#  "/Users/emb3/Library/CloudStorage/OneDrive-UniversityofLeicester/projects/Eamonn_Bumblebee/covariates.tsv"
+#  "/PATH/covariates.tsv"
 #)
 
 covar <- fread(
-  "/Users/ebm3/Library/CloudStorage/OneDrive-UniversityofLeicester/projects/Eamonn_Bumblebee/covariates.tsv"
+  "/PATH/covariates.tsv"
 )#work
 
 # ------------------- ALIGN SAMPLES --------------
@@ -150,7 +150,7 @@ ggplot(dat, aes(PC1, PC2, group = interaction(colony, treatment))) +
 
 
 ggsave(
-  "/Users/emb3/Library/CloudStorage/OneDrive-UniversityofLeicester/projects/Eamonn_Bumblebee/robust_pca.pdf"
+  "/PATH/robust_pca.pdf"
 )
 
 # ------------------- UMAP VISUALISATION ---------
@@ -203,7 +203,7 @@ ggplot(dat, aes(UMAP1, UMAP2, group = interaction(colony, treatment))) +
   )
 
 ggsave(
-  "/Users/emb3/Library/CloudStorage/OneDrive-UniversityofLeicester/projects/Eamonn_Bumblebee/umap_robust_pca.pdf"
+  "/PATH/umap_robust_pca.pdf"
 )
 
 
@@ -477,7 +477,7 @@ combined_plot <- (p_global + p_facet) +
 combined_plot
 
 ggsave(
-  "/Users/emb3/Library/CloudStorage/OneDrive-UniversityofLeicester/projects/Eamonn_Bumblebee/facet_umap_robust_pca.pdf",
+  "/PATH/facet_umap_robust_pca.pdf",
   combined_plot,
   width = 11.4,
   height = 4.9
@@ -599,7 +599,7 @@ ggplot() +
   )
 
 ggsave(
-  "/Users/emb3/Library/CloudStorage/OneDrive-UniversityofLeicester/projects/Eamonn_Bumblebee/pc1_quad_predicted_prob_by_colony.pdf",
+  "/PATH/pc1_quad_predicted_prob_by_colony.pdf",
   width = 12,
   height = 9
 )
