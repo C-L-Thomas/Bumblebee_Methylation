@@ -13,9 +13,9 @@ in_dir <- "." 		#Setwd
 out_prefix <- "DSS"	#Set prefix
 fdr_thresh <- 0.05	#Set FDR threshold
 
-gene_anno_file <- "/data/monoallelic/christian/Genomes/Bombus_terrestris/genes_with_start_and_end.txt"	#File stating gene start and end
-gff_file       <- "/data/monoallelic/christian/Genomes/Bombus_terrestris/GCF_910591885.1_iyBomTerr1.2_genomic.gff"	#gff
-go_map_file       <- "/data/monoallelic/christian/Genomes/Bombus_terrestris/BomTerr1.2_Eggnog_go_map.tsv"	#Go terms
+gene_anno_file <- "/path/genes_with_start_and_end.txt"	#File stating gene start and end
+gff_file       <- "/path/GCF_910591885.1_iyBomTerr1.2_genomic.gff"	#gff
+go_map_file       <- "/path/BomTerr1.2_Eggnog_go_map.tsv"	#Go terms
 
 nodeSize <- 5	#Minimum node size for topgo
 topNodes <- 200	#Number of go terms to print (if sig)
